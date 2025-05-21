@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top" />
+    <style>
+      body {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 20%;
+      }
+
+      h1 {
+        display: inline-block;
+        padding: 20px 100px;
+        text-align: center;
+        border: 3px solid black;
+        font-weight: 400;
+      }
+
+      .highlight {
+        background-color: #f0f8ff;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      .header{
+        margin: auto;
+      }
+
+      section div {
+        display: inline-block;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      tbody td {
+        margin: 0;
+        width: 100px;
+        height: 25px;
+      }
+      thead td {
+        font-weight: bold;
+      }
+      .section_num {
+        font-weight: bold;
+        position: relative;
+      }
+      .section_num p {
+        margin: 25px 30px 0 0;
+
+      }
+      section div {
+        display: inline-block;
+        vertical-align: top; /* ← Add this line */
+      }
+      section {
+        display: grid;
+        grid-template-columns: 1fr 3fr; /* 2 columns: label + table */
+        gap: 20px;
+        align-items: start;
+        padding: 10px;
+      }
+      .section_num {
+        font-weight: bold;
+      }
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+      .red {
+        background-color: rgba(244, 199, 195, 1)
+
+      }
+      .green {
+        background-color: rgba(198, 239, 206, 1);
+      }
+      td{
+        padding-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Goal Update - Date</h1>
+    </div>
+    <!-- <p>Hello, <?= recipient ?>,</p>
+    <p class="highlight">This is your report for <?= date ?>.</p> -->
+
+    <p>Hello, Ed</p>
+    <p class="highlight">This is your report for (today)</p>
+
+    <section>
+      <div class="section_num">
+        <p>Section 1</p>
+      </div>
+      <div>
+        <table>
+          <colgroup>
+            <col style="width: 100px" />
+            <!-- First column wider -->
+            <col style="width: 500px" />
+            <!-- Second column -->
+          </colgroup>
+          <thead>
+            <tr>
+              <td>Target</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="red border">&lt;60</td>
+              <td>
+                <ul>
+                  <li>Goal goes here and only here</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="green border">&gt;3.0</td>
+              <td>
+                <ul>
+                  <li>Goal goes here and only here</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border">&gt;86%</td>
+              <td>
+                <ul>
+                  <li>Goal goes here and only here</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border">&gt;88%</td>
+              <td>
+                <ul>
+                  <li>Goal goes here and only here</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <img src="cid:myChartImage" />
+  </body>
+</html>
