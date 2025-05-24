@@ -24,7 +24,10 @@
         border-radius: 4px;
       }
       .header{
-        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
       }
 
       section div {
@@ -81,13 +84,13 @@
   </head>
   <body>
     <div class="header">
-      <h1>Goal Update - Date</h1>
+      <h1>Goal Update - <?= date ?></h1>
     </div>
     <!-- <p>Hello, <?= recipient ?>,</p>
-    <p class="highlight">This is your report for <?= date ?>.</p> -->
+    <p class="highlight">This is your report for .</p> -->
 
     <p>Hello, Ed</p>
-    <p class="highlight">This is your report for (today)</p>
+    <p class="highlight">This is your report for <?= date ?></p>
 
     <section>
       <div class="section_num">
@@ -108,34 +111,34 @@
           </thead>
           <tbody>
             <tr>
-              <td class="red border">&lt;60</td>
+              <td class="border">&lt;60</td>
               <td>
                 <ul>
-                  <li>Goal goes here and only here</li>
+                  <li><?= goals.section1.goal1.value ?></li>
                 </ul>
               </td>
             </tr>
             <tr>
-              <td class="green border">&gt;3.0</td>
+              <td class="red border">&gt;3.0</td>
               <td>
                 <ul>
-                  <li>Goal goes here and only here</li>
+                  <li><?= goals.section1.goal2 ?></li>
                 </ul>
               </td>
             </tr>
             <tr>
-              <td class="border">&gt;86%</td>
+              <td class="border green">&gt;86%</td>
               <td>
                 <ul>
-                  <li>Goal goes here and only here</li>
+                  <li><?= goals.section1.goal3 ?></li>
                 </ul>
               </td>
             </tr>
             <tr>
-              <td class="border">&gt;88%</td>
+              <td class="border green">&gt;88%</td>
               <td>
                 <ul>
-                  <li>Goal goes here and only here</li>
+                  <li><?= goals.section1.goal4 ?></li>
                 </ul>
               </td>
             </tr>
@@ -143,6 +146,128 @@
         </table>
       </div>
     </section>
-    <img src="cid:myChartImage" />
+    <section>
+      <div class="section_num">
+        <p>Section 2</p>
+      </div>
+      <div>
+        <table>
+          <colgroup>
+            <col style="width: 100px" />
+            <!-- First column wider -->
+            <col style="width: 500px" />
+            <!-- Second column -->
+          </colgroup>
+          <tbody>
+            <tr>
+              <td class="green border">&gt;30</td>
+              <td>
+                <ul>
+                  <li><?= goals.section2.goal1 ?></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="green border">&gt;360</td>
+              <td>
+                <ul>
+                  <li><?= goals.section2.goal2 ?></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border"></td>
+              <td>
+                <ul>
+                  <li><?= goals.section2.goal3 ?></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border"></td>
+              <td>
+                <ul>
+                  <li><?= goals.section2.goal4 ?></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <div class="section_num">
+        <p>Section 3</p>
+      </div>
+      <div>
+        <table>
+          <colgroup>
+            <col style="width: 100px" />
+            <!-- First column wider -->
+            <col style="width: 500px" />
+            <!-- Second column -->
+          </colgroup>
+          <tbody>
+            <tr>
+              <td class="green border">&lt; 100</td>
+              <td>
+                <ul>
+                  <li><?= goals.section3.goal1 ?></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="red border">&lt; 10</td>
+              <td>
+                <ul>
+                  <li><?= goals.section3.goal2 ?></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border"></td>
+              <td>
+                <ul>
+                  <li><?= goals.section3.goal3 ?></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border"></td>
+              <td>
+                <ul>
+                  <li><?= goals.section3.goal4 ?></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border green">&lt; 125 / 85</td>
+              <td>
+                <ul>
+                  <li><?= goals.section3.goal5 ?></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border red">&lt; 21</td>
+              <td>
+                <ul>
+                  <li><?= goals.section3.goal6 ?></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <div>
+      <img src="cid:chartImage1" />
+    </div>
+    <div>
+      <img src="cid:chartImage2" />
+    </div>
+    <div>
+      <img src="cid:chartImage3" />
+    </div>
   </body>
 </html>
