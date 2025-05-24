@@ -13,59 +13,107 @@ function sendEmailWithChart() {
     section1: {
       goal1: {
         value: getValue("J9"),
-        class: sheet,
+        class:
+          getValue("O9") <= 0.66 * getValue("N9")
+            ? "green"
+            : getValue("O9") <= getValue("N9") * 0.9
+            ? "yellow"
+            : "red",
       },
       goal2: {
-        value: sheet.getRange("J10").getValue(),
-        class: sheet.getRange("J10").getValue() > 3.0 ? "green" : "red",
+        value: getValue("J10"),
+        class:
+          getValue("O10") >= getValue("N10")
+            ? "green"
+            : getValue("O10") >= getValue("N10") * 0.8
+            ? "yellow"
+            : "red",
       },
       goal3: {
-        value: sheet.getRange("J11").getValue(),
-        class: sheet.getRange("J11").getValue() < 86 ? "green" : "red",
+        value: getValue("J11"),
+        class:
+          getValue("O11") >= getValue("N11")
+            ? "green"
+            : getValue("O11") >= getValue("N11") - 0.12
+            ? "yellow"
+            : "red",
       },
       goal4: {
-        value: sheet.getRange("J12").getValue(),
-        class: sheet.getRange("J12").getValue() < 86 ? "green" : "red",
+        value: getValue("J12"),
+        class:
+          getValue("O12") >= getValue("N12")
+            ? "green"
+            : getValue("O12") >= getValue("N12") - 0.12
+            ? "yellow"
+            : "red",
       },
     },
     section2: {
       goal1: {
-        value: sheet.getRange("J14").getValue(),
-        class: sheet.getRange("J14").getValue() < 60 ? "green" : "red",
+        value: getValue("J14"),
+        class:
+          getValue("O14") <= getValue("N14")
+            ? "green"
+            : getValue("O14") < getValue("N14") * 1.5
+            ? "yellow"
+            : "red",
       },
       goal2: {
-        value: sheet.getRange("J15").getValue(),
-        class: sheet.getRange("J15").getValue() > 3.0 ? "green" : "red",
+        value: getValue("J15"),
+        class:
+          getValue("O15") < getValue("N15")
+            ? "green"
+            : getValue("O15") < getValue("N15") * 2
+            ? "yellow"
+            : "red",
       },
       goal3: {
-        value: sheet.getRange("J16").getValue(),
+        value: getValue("J16"),
       },
       goal4: {
-        value: sheet.getRange("J17").getValue(),
+        value: getValue("J17"),
       },
     },
     section3: {
       goal1: {
-        value: sheet.getRange("J19").getValue(),
-        class: sheet.getRange("J19").getValue() < 60 ? "green" : "red",
+        value: getValue("J19"),
+        class: getValue("B163") <= getValue("N19") ? "green" : "red",
       },
       goal2: {
-        value: sheet.getRange("J20").getValue(),
-        class: sheet.getRange("J20").getValue() > 3.0 ? "green" : "red",
+        value: getValue("J20"),
+        class:
+          getValue("O20") <= getValue("N20")
+            ? "green"
+            : getValue("O20") <= getValue("N20") * 1.5
+            ? "yellow"
+            : "red",
       },
       goal3: {
-        value: sheet.getRange("J21").getValue(),
+        value: getValue("J21"),
       },
       goal4: {
-        value: sheet.getRange("J22").getValue(),
+        value: getValue("J22"),
       },
       goal5: {
-        value: sheet.getRange("J23").getValue(),
-        class: sheet.getRange("J23").getValue() < 86 ? "green" : "red",
+        value: getValue("J23"),
+        class:
+          getValue("O23") < getValue("N23") && getValue("O24") < getValue("N24")
+            ? "green"
+            : (getValue("O23") < getValue("N23") &&
+                getValue("O24") > getValue("N24")) ||
+              (getValue("O23") > getValue("N23") &&
+                getValue("O24") < getValue("N24"))
+            ? "yellow"
+            : "red",
       },
       goal6: {
-        value: sheet.getRange("J24").getValue(),
-        class: sheet.getRange("J24").getValue() < 86 ? "green" : "red",
+        value: getValue("J24"),
+        class:
+          getValue("O25") <= 0.8 * getValue("N25")
+            ? "green"
+            : getValue("O25") <= getValue("N25")
+            ? "yellow"
+            : "red",
       },
     },
   };
