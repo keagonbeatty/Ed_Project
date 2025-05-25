@@ -1,10 +1,12 @@
+const spreadsheetID = "17ficZo87FskhKCHQGLaRT_kniTmsfw_apLLkfa7g860";
+
 function getValue(cell) {
-  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Email");
+  const sheet = SpreadsheetApp.openById(spreadsheetID).getSheetByName("Email");
   return sheet.getRange(cell).getValue();
 }
 
 function sendEmailWithChart() {
-  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  const spreadsheet = SpreadsheetApp.openById(spreadsheetID);
   const sheet = spreadsheet.getSheetByName("Email");
   const charts = sheet.getCharts();
 

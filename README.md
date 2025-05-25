@@ -30,9 +30,17 @@
 ![Step 8](./WI_Images/Screenshot%202025-05-24%20at%208.56.11 PM.png)
 
 9. Paste the markup from [email.html](https://github.com/keagonbeatty/Ed_Project/blob/main/email.html)
+![Step 9](./WI_Images/Screenshot%202025-05-24%20at%209.01.04 PM.png)
 
+10. Click the Sace Button
+![Step 10](./WI_Images/Screenshot%202025-05-24%20at%209.04.34 PM.png)
 
+11. Nevigate to "Code.gs" and click "Run"
+![Step 10](./WI_Images/Screenshot%202025-05-24%20at%209.08.22 PM.png)
 
+12. If the Email looks good continue to add the trigger
+
+13. Click the Alarm Clock icon to the left of the screen
 
 
 ## Configuration
