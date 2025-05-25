@@ -27,7 +27,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 200px;
+        vertical-align: middle;
+        height: 100px;
+      }
+
+      section{
+        margin-bottom: 20px;
       }
 
       section div {
@@ -46,7 +51,6 @@
       }
       .section_num {
         font-weight: bold;
-        position: relative;
       }
       .section_num p {
         margin: 25px 30px 0 0;
@@ -55,13 +59,6 @@
       section div {
         display: inline-block;
         vertical-align: top; /* ← Add this line */
-      }
-      section {
-        display: grid;
-        grid-template-columns: 1fr 3fr; /* 2 columns: label + table */
-        gap: 20px;
-        align-items: start;
-        padding: 10px;
       }
       .section_num {
         font-weight: bold;
@@ -88,24 +85,23 @@
     </div>
 
     <section>
-      <div class="section_num">
-        <p>Section 1</p>
-      </div>
       <div>
         <table>
           <colgroup>
             <col style="width: 100px" />
             <!-- First column wider -->
-            <col style="width: 500px" />
+            <col style="width: 100px" />
             <!-- Second column -->
           </colgroup>
           <thead>
             <tr>
+                <td></td>
               <td>Target</td>
             </tr>
           </thead>
           <tbody>
             <tr>
+                <td class="section_num">Section 1</td>
               <td class="<?= goals.section1.goal1.class ?> border">&lt;60</td>
               <td>
                 <ul>
@@ -114,6 +110,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="<?= goals.section1.goal2.class ?> border">&gt;3.0</td>
               <td>
                 <ul>
@@ -122,6 +119,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="<?= goals.section1.goal3.class ?> border">&gt;86%</td>
               <td>
                 <ul>
@@ -130,6 +128,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="<?= goals.section1.goal4.class ?> border">&gt;88%</td>
               <td>
                 <ul>
@@ -142,19 +141,17 @@
       </div>
     </section>
     <section>
-      <div class="section_num">
-        <p>Section 2</p>
-      </div>
       <div>
         <table>
           <colgroup>
             <col style="width: 100px" />
             <!-- First column wider -->
-            <col style="width: 500px" />
+            <col style="width: 100px" />
             <!-- Second column -->
           </colgroup>
           <tbody>
             <tr>
+                <td class="section_num">Section 2</td>
               <td class="<?= goals.section2.goal1.class ?> border">&gt;30</td>
               <td>
                 <ul>
@@ -163,6 +160,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="<?= goals.section2.goal2.class ?> border">&gt;360</td>
               <td>
                 <ul>
@@ -171,6 +169,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="border"></td>
               <td>
                 <ul>
@@ -179,6 +178,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="border"></td>
               <td>
                 <ul>
@@ -191,19 +191,17 @@
       </div>
     </section>
     <section>
-      <div class="section_num">
-        <p>Section 3</p>
-      </div>
       <div>
         <table>
           <colgroup>
             <col style="width: 100px" />
             <!-- First column wider -->
-            <col style="width: 500px" />
+            <col style="width: 100px" />
             <!-- Second column -->
           </colgroup>
           <tbody>
             <tr>
+                <td class="section_num">Section 3</td>
               <td class="<?= goals.section3.goal1.class ?> border">&lt; 100</td>
               <td>
                 <ul>
@@ -212,6 +210,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="<?= goals.section3.goal2.class ?> border">&lt; 10</td>
               <td>
                 <ul>
@@ -220,6 +219,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="border"></td>
               <td>
                 <ul>
@@ -228,6 +228,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="border"></td>
               <td>
                 <ul>
@@ -236,6 +237,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="<?= goals.section3.goal5.class ?> border">&lt; 125 / 85</td>
               <td>
                 <ul>
@@ -244,6 +246,7 @@
               </td>
             </tr>
             <tr>
+                <td></td>
               <td class="<?= goals.section3.goal6.class ?> border">&lt; 21</td>
               <td>
                 <ul>
