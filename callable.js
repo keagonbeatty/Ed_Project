@@ -1,6 +1,5 @@
 function getValue(cell) {
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Email");
-
   return sheet.getRange(cell).getValue();
 }
 
@@ -12,6 +11,7 @@ function sendEmailWithChart() {
   const goals = {
     section1: {
       goal1: {
+        goalText: getValue("H9"),
         value: getValue("J9"),
         class:
           getValue("O9") <= 0.66 * getValue("N9")
@@ -21,6 +21,7 @@ function sendEmailWithChart() {
             : "red",
       },
       goal2: {
+        goalText: getValue("H10"),
         value: getValue("J10"),
         class:
           getValue("O10") >= getValue("N10")
@@ -30,6 +31,7 @@ function sendEmailWithChart() {
             : "red",
       },
       goal3: {
+        goalText: getValue("H11"),
         value: getValue("J11"),
         class:
           getValue("O11") >= getValue("N11")
@@ -39,6 +41,7 @@ function sendEmailWithChart() {
             : "red",
       },
       goal4: {
+        goalText: getValue("H12"),
         value: getValue("J12"),
         class:
           getValue("O12") >= getValue("N12")
@@ -50,6 +53,7 @@ function sendEmailWithChart() {
     },
     section2: {
       goal1: {
+        goalText: getValue("H14"),
         value: getValue("J14"),
         class:
           getValue("O14") <= getValue("N14")
@@ -59,6 +63,7 @@ function sendEmailWithChart() {
             : "red",
       },
       goal2: {
+        goalText: getValue("H15"),
         value: getValue("J15"),
         class:
           getValue("O15") < getValue("N15")
@@ -68,18 +73,22 @@ function sendEmailWithChart() {
             : "red",
       },
       goal3: {
+        goalText: getValue("H16"),
         value: getValue("J16"),
       },
       goal4: {
+        goalText: getValue("H17"),
         value: getValue("J17"),
       },
     },
     section3: {
       goal1: {
+        goalText: getValue("H19"),
         value: getValue("J19"),
         class: getValue("B163") <= getValue("N19") ? "green" : "red",
       },
       goal2: {
+        goalText: getValue("H20"),
         value: getValue("J20"),
         class:
           getValue("O20") <= getValue("N20")
@@ -89,12 +98,15 @@ function sendEmailWithChart() {
             : "red",
       },
       goal3: {
+        goalText: getValue("H21"),
         value: getValue("J21"),
       },
       goal4: {
+        goalText: getValue("H22"),
         value: getValue("J22"),
       },
       goal5: {
+        goalText: getValue("H23"),
         value: getValue("J23"),
         class:
           getValue("O23") < getValue("N23") && getValue("O24") < getValue("N24")
@@ -107,6 +119,7 @@ function sendEmailWithChart() {
             : "red",
       },
       goal6: {
+        goalText: getValue("H24"),
         value: getValue("J24"),
         class:
           getValue("O25") <= 0.8 * getValue("N25")

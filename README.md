@@ -8,7 +8,8 @@
 ![Step 3](./WI_Images/Screenshot%202025-05-24%20at%207.58.43 PM.png)
 4. Delete all lines from the Ap Scripts IDE and rename this project
 ![Step 4](./WI_Images/Screenshot%202025-05-24%20at%208.00.33 PM.png)
-5. Copy the code from [callable.js](https://github.com/keagonbeatty/Ed_Project/callable.js)
+5. Copy the code from [callable.js](https://github.com/keagonbeatty/Ed_Project/blob/main/callable.js) and copy it into the Google App Scripts IDE
+
 
 
 
