@@ -10,7 +10,7 @@
 ![Step 3](./WI_Images/Screenshot%202025-05-24%20at%207.58.43 PM.png)
 
 
-4. Delete all lines from the Ap Scripts IDE and rename this project
+4. Delete all lines from the App Scripts IDE and rename this project
 ![Step 4](./WI_Images/Screenshot%202025-05-24%20at%208.00.33 PM.png)
 
 
@@ -19,9 +19,11 @@
 
 ![Step 5.1](./WI_Images/Screenshot%202025-05-24%20at%208.37.52 PM.png)
 
-6. In the code on change "Email" to the name of the sheet that will provide the information (the actual page that you sent me) and make sure no ther sheets share a sname with it. If changing the name be sure to leave the double quotes (" ")
+6. In the code on change "Email" to the name of the sheet that will provide the information (the actual page that you sent me) and make sure no ther sheets share a name with it. If changing the name be sure to leave the double quotes (" ")
 
 ![Step 6](./WI_Images/Screenshot%202025-05-24%20at%208.45.28 PM.png)
+
+7. Add the Sheet ID so the script references 
 
 7. Click the "+" to add a new file, and select "HTML"
 ![Step 7](./WI_Images/Screenshot%202025-05-24%20at%208.52.14 PM.png)
@@ -42,9 +44,3 @@
 
 13. Click the Alarm Clock icon to the left of the screen
 
-
-## Configuration
-
-### 
-
-## To Do
