@@ -1,4 +1,4 @@
-const spreadsheetID = "17ficZo87FskhKCHQGLaRT_kniTmsfw_apLLkfa7g860";
+const spreadsheetID = "SCRIPT_ID_HERE";
 
 function getValue(cell) {
   const sheet = SpreadsheetApp.openById(spreadsheetID).getSheetByName("Email");
