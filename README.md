@@ -77,3 +77,20 @@
     4. If an error pops up send it to me on teams, if I write instructions on how to debug this hellhole of a script this will be a 3 part novela
 
     5. If it works you should recieve an email, review the email to your sheet and make sure everything looks right
+
+10. Creating a Trigger
+
+    1. Click the Alarm Clock Icon on the right hand side of the screen
+
+    ![Step 10.1](./WI_Images/2025-05-27_07-23-35.png)
+
+    2. Click "Add Trigger"
+
+    ![Step 10.2](./WI_Images/2025-05-27_07-29-30.png)
+
+    3. Enter the below setting and then click "Save"
+
+    ![Step 10.3](./WI_Images/2025-05-27_07-33-55.png)
+
+    4. Add the settings for every Friday as well
+
